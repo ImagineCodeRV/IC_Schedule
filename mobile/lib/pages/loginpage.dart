@@ -18,8 +18,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isKeyboardVisible =
-      KeyboardVisibilityProvider.isKeyboardVisible(context);
+    KeyboardVisibilityProvider.isKeyboardVisible(context);
     screenHeight = MediaQuery.of(context).size.height;
     screenWidth = MediaQuery.of(context).size.width;
 
