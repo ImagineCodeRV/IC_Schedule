@@ -1,0 +1,63 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .titulo {
+    margin-top: 20px;
+  }
+  
+  .conteudo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .menu-lateral {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .calendario-container {
+    flex-grow: 1;
+    margin-left: 20px; /* Adicione margem à esquerda para separar o menu lateral */
+  }
+  
+
+  
+  .formulario-overlay,
+  .evento-info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .formulario-evento,
+  .evento-info-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .formulario-evento form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .botoes {
+    margin-top: 10px;
+  }
+  
+  .evento-info-container button {
+    margin-top: 20px;
+  }
+  
+  

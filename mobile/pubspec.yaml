@@ -39,6 +39,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  table_calendar: ^3.1.1
+  flutter_keyboard_visibility: ^6.0.0
+  font_awesome_flutter: ^10.7.0
+  curved_navigation_bar: ^1.0.3
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

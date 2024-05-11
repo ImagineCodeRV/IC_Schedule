@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffffff;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 550px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro {
+    background: linear-gradient(135deg, #3418E8 0%, #000080 100%);
+
+    width: 50%;
+
+    border-radius: 20px;
+    padding: 24px 47px 24px 48px;
+
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.topo-cadastro {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 50px;
+}
+
+ion-icon {
+    font-size: 64px;
+    padding: 10px;
+    
+    background-color: #FFFFFF;
+    color: #3418e8;
+    border-radius: 50%;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dados {
+    font-size: 14px;
+    font-weight: 400;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.span-required {
+    font-size: 12px;
+    font-weight: 700;
+    color: #c23924;
+    margin: 1px 0 0 0;
+    display: none;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apelido {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confirmar-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+input {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    box-shadow: 5px 5px 10px #00000073;
+    
+    background-color: #FFFFFF;
+
+    height: 40px;
+    padding: 20px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input:hover {
+    background-color: #DFDFDF;
+    color: #000000;
+}
+
+button {
+    background: linear-gradient(135deg, #FFFFFF 0%, #6478E6 100%);
+    box-shadow: 5px 5px 10px #00000073;
+
+
+    width: 100%;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+    
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    
+    color: #1A0CB4;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6478E6, #FFFFFF);
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 70px;
+}
+
+.texto-rodape {
+    font-size: 14px;
+    font-weight: 400;
+
+    display: flex;
+    gap: 3px;
+    justify-content: center;    
+
+    margin-top:70px;
+}
+
+.texto-rodape a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
