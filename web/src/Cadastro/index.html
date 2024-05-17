@@ -21,31 +21,31 @@
                 <div class="imagem">
                     <a href=""><ion-icon name="image-outline"></ion-icon></a>
                 </div>
-                <div class="nome">
+                <div id="nome">
                     <label for="name">Nome</label>
                     <input class="campo-required" id="name" type="text" placeholder="Nome" oninput="nameValidate()" required>
-                    <span class="span-required">Nome deve conter pelo menos 4 caracteres</span>
+                    <span class="span-required">Nome deve conter pelo menos 3 caracteres</span>
                 </div>
 
-                <div class="apelido">
+                <div id="apelido">
                     <label for="user">Apelido</label>
                     <input class="campo-required" id="user" type="text" placeholder="Apelido" oninput="surnameValidate()" required>
-                    <span class="span-required">Apelido deve conter pelo menos 4 caracteres</span>
+                    <span class="span-required">Apelido deve conter pelo menos 3 caracteres</span>
                 </div>
 
-                <div class="email">
+                <div id="email">
                     <label for="email">Email</label>
-                    <input class="campo-required" id="email" type="email" placeholder="user@gmail.com" oninput="emailValidate()" required>
+                    <input class="campo-required" id="email" type="email" placeholder="user@email.com" oninput="emailValidate()" required>
                     <span class="span-required">Email inválido</span>
                 </div>
 
-                <div class="senha">
+                <div id="senha">
                     <label for="password">Senha</label>
                     <input class="campo-required" id="password" type="password" placeholder="Senha" oninput="passwordValidate()" required>
                     <span class="span-required">Senha deve conter entre 6 e 12 caracteres</span>
                 </div>
 
-                <div class="confirmar-senha">
+                <div id="confirmar-senha">
                     <label for="confirm-password">Confirme sua senha</label>
                     <input class="campo-required" id="confirm-password" type="password" placeholder="Confirme sua senha"  oninput="comparePassword()" required>
                     <span class="span-required">Senhas não compatíveis</span>

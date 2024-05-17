@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/ico/lucimar.jpeg">
+    <title>Recuperação de senha</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="recuperar-senha">
+            <header class="topo-recuperar-senha">Recuperar senha</header>
+
+            <article class="descriçao">
+                <p>Esqueceu sua senha? Não se preocupe, preencha abaixo com seu email e enviaremos sua nova senha.</p>
+            </article>
+
+            <article class="email">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="user@email.com" oninput="emailValidate()" required>
+                <span class="span-required">Digite um email válido</span>
+            </article>
+
+            <article class="botao">
+                <button type="submit" onclick="recuperar()">Recuperar</button>
+            </article>
+
+            <article class="texto-rodape">
+                <p>Agora que já tem sua nova senha, <a href="/Login/index.html">faça seu login</a></p>
+            </article>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>

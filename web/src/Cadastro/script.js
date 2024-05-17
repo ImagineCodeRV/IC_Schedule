@@ -1,17 +1,7 @@
-const dados = document.getElementsByClassName('dados')
 const campos = document.querySelectorAll('input.campo-required')
 const spans = document.querySelectorAll('span.span-required')
 const emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
 // código para validação de email
-
-dados.addEventListener('submit', (event) => {
-    event.preventDefault()
-    nameValidate()
-    surnameValidate()
-    emailValidate()
-    passwordValidate()
-    comparePassword()
-});
 
 function setError(index){
     // em caso do if ser true, aplicar as configirações abaixo
@@ -25,8 +15,9 @@ function removeError(index){
     spans[index].style.display = 'none';
 }
 
+
 function nameValidate() {
-    if (campos[0].value.length < 4){
+    if (campos[0].value.length < 3){
         setError(0)
     } else {
         removeError(0)
@@ -34,7 +25,7 @@ function nameValidate() {
 }
 
 function surnameValidate() {
-    if (campos[1].value.length < 4) {
+    if (campos[1].value.length < 3) {
         setError(1)
     } else {
         removeError(1)
@@ -63,5 +54,37 @@ function comparePassword() {
         removeError(4)
     } else {
         setError(4)
+    }
+}
+
+function cadastrar() {
+    if (campos[0].value.length == 0) {
+        setError(0)
+    } else {
+        removeError(0)
+    }
+
+    if(campos[1].value.length == 0) {
+        setError(1)
+    } else {
+        removeError(1)
+    }
+
+    if(campos[2].value.length == 0) {
+        setError(2)
+    } else {
+        removeError(2)
+    }
+
+    if(campos[3].value.length == 0) {
+        setError(3)
+    } else {
+        removeError(3)
+    }
+
+    if(campos[4].value.length == 0) {
+        setError(4)
+    } else {
+        removeError(4)
     }
 }

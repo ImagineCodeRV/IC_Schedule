@@ -13,14 +13,12 @@ main {
     width: 100%;
     height: 100vh;
 
-    padding: 550px 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cadastro {
+.recuperar-senha {
     background: linear-gradient(135deg, #3418E8 0%, #000080 100%);
 
     width: 50%;
@@ -32,36 +30,27 @@ main {
     color: #FFFFFF;
 }
 
-.topo-cadastro {
+.topo-recuperar-senha {
     font-size: 30px;
     font-weight: 700;
 
     margin-bottom: 50px;
 }
 
-ion-icon {
-    font-size: 64px;
-    padding: 10px;
-    
-    background-color: #FFFFFF;
-    color: #3418e8;
-    border-radius: 50%;
+.descriçao {
+    font-size: 14px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
 }
 
-.imagem {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.dados {
+.email {
     font-size: 14px;
     font-weight: 400;
 
-
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 5px;
 }
 
 .span-required {
@@ -69,37 +58,7 @@ ion-icon {
     font-weight: 700;
     color: #c23924;
     margin: 1px 0 0 0;
-    display: none;
-}
-#nome {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#apelido {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#email {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#senha {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-#confirmar-senha {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
+    display: none;    
 }
 
 input {
