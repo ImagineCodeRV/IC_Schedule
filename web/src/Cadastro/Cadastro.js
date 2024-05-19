@@ -22,42 +22,42 @@ function Cadastro()  {
 
     const nameValidate = () => {
         if (campos[0].value.length < 3) {
-            setError(0)
+            return setError(0)
         } else {
-            removeError(0)
+            return removeError(0)
         }
     }
 
     const surnameValidate = () => {
         if (campos[1].value.length < 3) {
-            setError(1)
+            return setError(1)
         } else {
-            removeError(1)
+            return removeError(1)
         }
     }
 
     const emailValidate = () => {
         if (!emailRegex.test(campos[2].value)) {
-            setError(2)
+            return setError(2)
         } else {
-            removeError(2)
+            return removeError(2)
         }
     }
 
     const passwordValidate = () => {
         if (campos[3].value.length < 6 || campos[3].value.length > 12) {
-            setError(3)
+            return setError(3)
         } else {
-            removeError(3)
+            return removeError(3),
             comparePassword()
         }
     }
 
     const comparePassword = () => {
         if (campos[3].value == campos[4].value) {
-            removeError(4)
+            return removeError(4)
         } else {
-            setError(4)
+            return setError(4)
         }
     }
 
@@ -107,37 +107,37 @@ function Cadastro()  {
                         </div>
                         <div id="nome">
                             <label for="name">Nome</label>
-                            <input class="campo-required" id="name" type="text" placeholder="Nome" oninput="nameValidate()" required/>
+                            <input class="campo-required" id="name" type="text" placeholder="Nome" oninput={nameValidate} required/>
                                 <span class="span-required">Nome deve conter pelo menos 3 caracteres</span>
                         </div>
 
                         <div id="apelido">
                             <label for="user">Apelido</label>
-                            <input class="campo-required" id="user" type="text" placeholder="Apelido" oninput="surnameValidate()" required />
+                            <input class="campo-required" id="user" type="text" placeholder="Apelido" oninput={surnameValidate} required />
                             <span class="span-required">Apelido deve conter pelo menos 3 caracteres</span>
                         </div>
 
                         <div id="email">
                             <label for="email">Email</label>
-                            <input class="campo-required" id="email" type="email" placeholder="user@email.com" oninput="emailValidate()" required />
+                            <input class="campo-required" id="email" type="email" placeholder="user@email.com" oninput={emailValidate} required />
                             <span class="span-required">Email inválido</span>
                         </div>
 
                         <div id="senha">
                             <label for="password">Senha</label>
-                            <input class="campo-required" id="password" type="password" placeholder="Senha" oninput="passwordValidate()" required />
+                            <input class="campo-required" id="password" type="password" placeholder="Senha" oninput={passwordValidate} required />
                             <span class="span-required">Senha deve conter entre 6 e 12 caracteres</span>
                         </div>
 
                         <div id="confirmar-senha">
                             <label for="confirm-password">Confirme sua senha</label>
-                            <input class="campo-required" id="confirm-password" type="password" placeholder="Confirme sua senha" oninput="comparePassword()" required />
+                            <input class="campo-required" id="confirm-password" type="password" placeholder="Confirme sua senha" oninput={comparePassword} required />
                             <span class="span-required">Senhas não compatíveis</span>
                         </div>
                     </article>
 
                     <article class="botao">
-                        <button type="submit" onclick="cadastrar()">Cadastrar</button>
+                        <button type="submit" onClick={cadastrar}>Cadastrar</button>
                     </article>
 
                     <article class="texto-rodape">

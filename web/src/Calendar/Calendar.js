@@ -277,6 +277,16 @@ function Schedule() {
                             </div>
                         </div>
                     )}
+                    <article class="texto-rodape">
+
+                        <p>Avançar para <a href="/">
+                            Login
+                        </a>
+                        </p>
+
+
+                    </article>
+                    <article class="texto-rodape" />
                 </div>
             </div>
         </div>
