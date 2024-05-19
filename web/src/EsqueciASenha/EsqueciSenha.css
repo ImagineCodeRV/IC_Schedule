@@ -58,7 +58,7 @@ main {
     font-weight: 700;
     color: #c23924;
     margin: 1px 0 0 0;
-    display: none;    
+    display: none;
 }
 
 input {
@@ -67,7 +67,7 @@ input {
     font-weight: 400;
     color: #000000;
     box-shadow: 5px 5px 10px #00000073;
-    
+
     background-color: #FFFFFF;
 
     height: 40px;
@@ -93,11 +93,11 @@ button {
 
     border: none;
     border-radius: 10px;
-    
+
     font-family: "Inter";
     font-size: 18px;
     font-weight: 700;
-    
+
     color: #1A0CB4;
 }
 
@@ -122,9 +122,9 @@ button:hover {
 
     display: flex;
     gap: 3px;
-    justify-content: center;    
+    justify-content: center;
 
-    margin-top:70px;
+    margin-top: 70px;
 }
 
 .texto-rodape a {
