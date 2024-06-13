@@ -1,4 +1,4 @@
-import 'package:mobile/pages/calendar.dart';
+/*import 'package:mobile/pages/calendar.dart';
 import 'package:mobile/pages/profilepage.dart';
 import 'package:mobile/pages/todaypage.dart';
 import 'package:mobile/widget/bottomnavigatorbar.dart';
@@ -39,4 +39,4 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: const BottomNavigatorBarWidget(),
     );
   }
-}
+}*/

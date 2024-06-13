@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import '../models/event.dart';
@@ -49,7 +49,7 @@ class _CalendarPageState extends State<CalendarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Calendário'),
+        title: const Text('Titulo'),
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.blueAccent,
@@ -138,8 +138,8 @@ class _CalendarPageState extends State<CalendarPage> {
                       itemCount: value.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin:
-                              const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 4),
                           decoration: BoxDecoration(
                             border: Border.all(),
                             borderRadius: BorderRadius.circular(12),
@@ -156,4 +156,4 @@ class _CalendarPageState extends State<CalendarPage> {
       ),
     );
   }
-}
+}*/

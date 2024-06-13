@@ -1,4 +1,4 @@
-import 'package:mobile/pages/calendar.dart';
+/*import 'package:mobile/pages/calendar.dart';
 import 'package:mobile/pages/profilepage.dart';
 import 'package:mobile/pages/todaypage.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -47,4 +47,4 @@ class _BottomNavigatorBarWidgetState extends State<BottomNavigatorBarWidget> {
       ),
     );
   }
-}
+}*/
